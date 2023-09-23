@@ -193,11 +193,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String encodedImage(Bitmap bitmap){
-        // Bitmap lớp thể hiện một bức ảnh
         // First we determine the size
         // we fixed width
         int previewWidth = 150;
-        // Calculate the height to the image not changed too much (biến dạng nhiều)
+        // Calculate the height to the image not changed too much
         int previewHeight = bitmap.getHeight() * previewWidth / bitmap.getWidth();
         // then we can review the image with these size but in small size then it is easy to store and transfer
         Bitmap previewBitmap = Bitmap.createScaledBitmap(bitmap, previewWidth, previewHeight, false);
